@@ -1,0 +1,350 @@
+<html>
+    <head>
+        <meta content="en-us" http-equiv="Content-Language" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+        <title>Azumanga Daioh 64!</title>
+        <link rel="icon" href="imgs/icon.png" type="image/png">
+        <meta property="og:title" content="Azumanga Daioh 64!">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="imgs/icon.png">
+    </head>
+        <style>
+            #azulogo {
+                margin: 10px;
+                width: 100%;
+                filter: drop-shadow(6px 6px 0px rgba(0, 0, 0, 0.6));
+                -webkit-filter: drop-shadow(5px 6px 0px rgba(0, 0, 0, 0.6));
+                -moz-filter: drop-shadow(6px 6px 0px rgba(0, 0, 0, 0.6));
+                animation: floatanim 2s ease-in-out infinite;
+            }
+
+        @keyframes floatanim {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        .life-icons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
+            justify-items: center;
+            gap: 0px;
+        }
+        .life-icons img {
+           height: 300%;
+            image-rendering: pixelated;
+            transition: transform 0.2s ease-in-out;
+            transform-origin: bottom
+        }
+        .life-icons img:hover {
+            transform: scale(1.2);
+        }
+        .download-button {
+            display: block;
+            width: 75%; 
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white !important;
+            text-align: center;
+            text-decoration: none;
+            transition: transform 0.2s, color 0.2s;
+            margin: 0 auto; 
+            border-radius: 20px 20px 20px 20px;
+        }
+
+        .download-button:hover {
+            transform: scale(1.1);
+            color: gray !important;
+            }
+        body {
+            cursor: url('imgs/cursor1.png'), auto;
+        }
+        a, button {
+            cursor: url('imgs/cursor2.png'), pointer;
+        }
+        .charsContainer {  display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 0px 2px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "char1 char2 char3";
+            }
+            .char1 { grid-area: char1; }
+            .char2 { grid-area: char2; }
+            .char3 { grid-area: char3; }
+            
+            .characterthumbnail {
+                border-radius: 20px 20px 20px 20px;
+                width: 100%
+            }
+    </style>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            :root {
+                --body-bg-image: url('imgs/bg2.png');
+            }
+        </style>
+    <body>
+        <div id="container">
+            <div id="headerArea">
+                
+                <nav id="navbar" style="margin-bottom: 10px;">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="characters.html">Characters</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="index.html#credits">Credits</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div>
+            <img src="imgs/charactersText.png" width=100% id="azulogo" style="image-rendering: pixelated;">
+            </div>
+                <nav id="navbar" style="margin-bottom: 10px;">
+                    <ul>
+                        <li><a href="#release1">Release 1 Characters</a></li>
+                        <li><a href="#release2">Release 2 Characters</a></li>
+                        <li><a href="#release3">Release 3 Characters</a></li>
+                    </ul>
+                </nav>
+            
+            <div id="flex">
+                <main>
+                    <div class="life-icons" style="margin-top: -5 ; margin-bottom: 20px">
+                    <a href="characters.html#osaka"><img src="imgs/icons/osakav2-icon.png" alt="Osaka"></a>
+                    <a href="characters.html#tomo"><img src="imgs/icons/tomo-icon.png" alt="Tomo"></a>
+                    <a href="characters.html#kagura"><img src="imgs/icons/kagura-icon.png" alt="Kagura"></a>
+                    <a href="characters.html#chiyo"><img src="imgs/icons/chiyo-icon.png" alt="Chiyo"></a>
+                    <a href="characters.html#sakaki"><img src="imgs/icons/sakaki-icon.png" alt="Sakaki"></a>
+                    <a href="characters.html#yomi"><img src="imgs/icons/yomi-icon.png" alt="Yomi"></a>
+                    <a href="characters.html#kaorin"><img src="imgs/icons/kaori-icon.png" alt="Kaori"></a>
+                    <a href="characters.html#chihiro"><img src="imgs/icons/chihiro-icon.png" alt="Chihiro"></a>
+                    </div>
+                </main>
+            </div>
+            <div id="flex" style="margin-top: 10px">
+                <main style="margin-right: 10px" id="release1">
+                    <h1 align=center style="margin-top: 1;margin-bottom: 1">Release 1</h1>
+                    <div class="charsContainer">
+                        
+                        <div class="char1" id="osaka">
+                        <h1 align=center style="color: white"><img src="imgs/icons/osakav2-icon.png" width="32" style="image-rendering: pixelated"> Osaka</h1>
+                       
+                         <div class="carousel" data-images="6">
+                            <div class="carousel-track">
+                                <img src="pngs/osaka_thumbnail1.png" alt="Osaka">
+                                <img src="pngs/osaka_thumbnail2.png" alt="Osaka Summer Uniform">
+                                <img src="pngs/osaka_thumbnail3.png" alt="Osaka Sports Outfit">
+                                <img src="pngs/osaka_thumbnail4.png" alt="Osaka Outfit 1">
+                                <img src="pngs/osaka_thumbnail5.png" alt="Osaka Outfit 2">
+                                <img src="pngs/osaka_thumbnail6.png" alt="Osaka Cafe Outfit">
+                             </div>
+                            </div>     
+                            
+                        <p align=center>Real name Ayumu Kasuga. Local airhead from Osaka.</p>
+                        <div class="tooltip"><h3 style="text-decoration: underline; cursor: url('imgs/cursor2.png'), pointer; margin-top: 1; margin-bottom: 1;"><small>Includes Legacy Model as an alt outfit.</small></h3>
+                        <span class="tooltiptext">Legacy Osaka<img src="imgs/thumbnails/osaka_legacy.png" width="200" style="border-radius: 20px 20px 20px 20px;"></span>
+                        </div>
+                        </div>
+                        
+                        <div class="char2" id="tomo">
+                        <h1 align=center style="color: white"><img src="imgs/icons/tomo-icon.png" width="32" style="image-rendering: pixelated"> Tomo</h1>
+                        
+                        <div class="carousel" data-images="6">
+                            <div class="carousel-track">
+                                <img src="pngs/tomo_thumbnail1.png" alt="Tomo">
+                                <img src="pngs/tomo_thumbnail2.png" alt="Tomo Summer Uniform">
+                                <img src="pngs/tomo_thumbnail3.png" alt="Tomo Sports Uniform">
+                                <img src="pngs/tomo_thumbnail4.png" alt="Tomo Outfit 1">
+                                <img src="pngs/tomo_thumbnail5.png" alt="Tomo Outfit 2">
+                                <img src="pngs/tomo_thumbnail6.png" alt="Tomo Cafe Outfit">
+                            </div>
+                            </div>
+                            
+                        <p align=center>Crazy and go-nuts student. Irritating.</p>
+                        <br>
+                        <div class="tooltip"><h3 style="text-decoration: underline; cursor: url('imgs/cursor2.png'), pointer; margin-top: 1; margin-bottom: 1;"><small>Her model was improved for release 2, you can see the original one here.</small></h3>
+                        <span class="tooltiptext">Release 1 Tomo Model
+                            
+                        <img src="imgs/thumbnails/oldtomo_thumbnail.gif" width="200" style="border-radius: 20px 20px 20px 20px;">
+                            
+                        
+                        
+                        </span>
+                        </div>
+                        </div>
+                        
+                        <div class="char3" id="kagura">
+                        <h1 align=center style="color: white"><img src="imgs/icons/kagura-icon.png" width="32" style="image-rendering: pixelated"> Kagura</h1>
+                        
+                        <div class="carousel" data-images="6">
+                            <div class="carousel-track">
+                                <img src="pngs/kagura_thumbnail1.png" alt="Kagura">
+                                <img src="pngs/kagura_thumbnail2.png" alt="Kagura Summer Uniform">
+                                <img src="pngs/kagura_thumbnail3.png" alt="Kagura Sports Uniform">
+                                <img src="pngs/kagura_thumbnail4.png" alt="Kagura Outfit 1">
+                                <img src="pngs/kagura_thumbnail5.png" alt="Kagura Outfit 2">
+                                <img src="pngs/kagura_thumbnail6.png" alt="Kagura Cafe Outfit">
+                            </div>
+                            </div>    
+                        
+                        <p align=center>She's a determined person, she's into sports and trains a lot.</p>
+                            <div class="tooltip"><h3 style="text-decoration: underline; cursor: url('imgs/cursor2.png'), pointer; margin-top: 1; margin-bottom: 1;"><small>Her model was improved for release 2, you can see the original one here.</small></h3>
+                        <span class="tooltiptext">Release 1 Kagura Model<img src="imgs/thumbnails/oldkagura_thumbnail.gif" width="200" style="border-radius: 20px 20px 20px 20px;"></span>
+                        </div>
+                        
+                    </div>
+                    </div>
+                </main>
+             </div>
+           <div id="flex" style="margin-top: 10px">
+                <main style="margin-right: 10px" id="release2">
+                    <h1 align=center style="margin-top: 1;margin-bottom: 1">Release 2</h1>
+                    <div class="charsContainer">
+                        
+                        <div class="char1" id="chiyo">
+                        <h1 align=center style="color: white"><img src="imgs/icons/chiyo-icon.png" width="32" style="image-rendering: pixelated"> Chiyo</h1>
+                        
+                            
+                        <div class="carousel" data-images="6">
+                            <div class="carousel-track">
+                                <img src="pngs/chiyo_thumbnail1.png" alt="Chiyo">
+                                <img src="pngs/chiyo_thumbnail2.png" alt="Chiyo Summer Uniform">
+                                <img src="pngs/chiyo_thumbnail3.png" alt="Chiyo Sports Uniform">
+                                <img src="pngs/chiyo_thumbnail4.png" alt="Chiyo Outfit 1">
+                                <img src="pngs/chiyo_thumbnail5.png" alt="Chiyo Outfit 2">
+                                <img src="pngs/chiyo_thumbnail6.png" alt="Chiyo Penguin Outfit">
+                            </div>
+                            </div>
+                            
+                        <p align=center>Small but smart girl, gifted and has funny hair.</p>
+                        </div>
+                        
+                        <div class="char2" id="sakaki">
+                        <h1 align=center style="color: white"><img src="imgs/icons/sakaki-icon.png" width="32" style="image-rendering: pixelated"> Sakaki</h1>
+                        
+                        <div class="carousel" data-images="6">
+                            <div class="carousel-track">
+                                <img src="pngs/sakaki_thumbnail1.png" alt="Sakaki">
+                                <img src="pngs/sakaki_thumbnail2.png" alt="Sakaki Summer Uniform">
+                                <img src="pngs/sakaki_thumbnail3.png" alt="Sakaki Sports Uniform">
+                                <img src="pngs/sakaki_thumbnail4.png" alt="Sakaki Outfit 1">
+                                <img src="pngs/sakaki_thumbnail5.png" alt="Sakaki Outfit 2">
+                                <img src="pngs/sakaki_thumbnail6.png" alt="Sakaki Cafe Outfit">
+                            </div>
+                            </div>
+                        
+                        <p align=center>Sakaki is a really tall and smart girl, also a cat lover.</p>
+                        <br>
+                        </div>
+                        
+                        <div class="char3" id="yomi">
+                        <h1 align=center style="color: white"><img src="imgs/icons/yomi-icon.png" width="32" style="image-rendering: pixelated"> Yomi</h1>
+                        
+                        <div class="carousel" data-images="6">
+                            <div class="carousel-track">
+                                <img src="pngs/yomi_thumbnail1.png" alt="Yomi">
+                                <img src="pngs/yomi_thumbnail2.png" alt="Yomi Summer Uniform">
+                                <img src="pngs/yomi_thumbnail3.png" alt="Yomi Sports Uniform">
+                                <img src="pngs/yomi_thumbnail4.png" alt="Yomi Outfit 1">
+                                <img src="pngs/yomi_thumbnail5.png" alt="Yomi Outfit 2">
+                                <img src="pngs/yomi_thumbnail6.png" alt="Yomi Cafe Outfit">
+                            </div>
+                            </div>
+                            
+                        <p align=center>The voice of reason, and the most mature and serious of her friends.</p>
+                        
+                    </div>
+                    </div>
+                    <div class="charsContainer" style="margin: 1px auto; position: relative">
+                        
+                        <div class="char1" id="kaori">
+                        <h1 align=center style="color: white"><img src="imgs/icons/kaori-icon.png" width="32" style="image-rendering: pixelated"> Kaori</h1>
+                        
+                        <div class="carousel" data-images="6">
+                            <div class="carousel-track">
+                                <img src="pngs/kaori_thumbnail1.png" alt="Kaori">
+                                <img src="pngs/kaori_thumbnail2.png" alt="Kaori Summer Uniform">
+                                <img src="pngs/kaori_thumbnail3.png" alt="Kaori Sports Uniform">
+                                <img src="pngs/kaori_thumbnail4.png" alt="Kaori Outfit 1">
+                                <img src="pngs/kaori_thumbnail5.png" alt="Kaori Outfit 2">
+                                <img src="pngs/kaori_thumbnail6.png" alt="Kaori Cafe Outfit">
+                            </div>
+                            </div>
+                            
+                        <p align=center>AKA Kaorin. She's a shy and passional girl, more than a little neurotic.</p>
+                        </div>
+                        
+                        <div class="char2" id="chihiro">
+                        <h1 align=center style="color: white"><img src="imgs/icons/chihiro-icon.png" width="32" style="image-rendering: pixelated"> Chihiro</h1>
+                            
+                        <div class="carousel" data-images="6">
+                            <div class="carousel-track">
+                                <img src="pngs/chihiro_thumbnail1.png" alt="Chihiro">
+                                <img src="pngs/chihiro_thumbnail2.png" alt="Chihiro Summer Uniform">
+                                <img src="pngs/chihiro_thumbnail3.png" alt="Chihiro Sports Uniform">
+                                <img src="pngs/chihiro_thumbnail4.png" alt="Chihiro Outfit 1">
+                                <img src="pngs/chihiro_thumbnail5.png" alt="Chihiro Outfit 2">
+                                <img src="pngs/chihiro_thumbnail6.png" alt="Chihiro Cafe Outfit">
+                            </div>
+                            </div>
+                            
+                        <p align=center>Kaori 's friend. Fairly easy-going person.</p>
+                        <br>
+                        </div>
+                        
+                        <div class="char3" id="azutower">
+                        <h1 align=center style="color: white"><img src="imgs/icons/azutower-icon.png" width="32"> AzuTower Characters</h1>
+                            
+                        <div class="carousel" data-images="3">
+                            <div class="carousel-track">
+                                <img src="pngs/azutower_thumbnail1.png" alt="Chihiro">
+                                <img src="pngs/azutower_thumbnail2.png" alt="Chihiro Summer Uniform">
+                                <img src="pngs/azutower_thumbnail3.png" alt="Chihiro Sports Uniform">
+                            </div>
+                            </div>
+                            
+                        <p align=center>Series of outfits in collaboration with the Pizza Tower mod "AzuTower" by AJ.
+                            <br>
+                            <h3 style="margin-top: 1; margin-bottom: 1;"><small>Osaka, Tomo and Chiyo are available in the current release</small></h3>
+                        </p>
+                        <br>
+                        </div>
+                    </div>
+                </main>
+             </div>
+            <div id="flex" style="margin-top: 10px">
+                <main style="margin-right: 10px" id="release3">
+                    <h1 align=center style="margin-top: 1;margin-bottom: 1">Release 3 <strong>(Not released yet)</strong></h1>
+                    <div>
+                        <h2 align=center style="color: white">Planned Characters for this release:</h2>
+                        <h2 align=center>
+                        <li>Yukari</li>
+                            <p></p>
+                        <li>Nyamo</li>
+                            <p></p>
+                        <li>Chiyo's Father</li>
+                            <p></p>
+                        <li>???</li>
+                        </h2>
+                    </div>
+                </main>
+             </div>
+            
+        <footer id="footer" style="margin-top: 10px;">
+        <p>[ Website hosted on <a href="https://nekoweb.org" style="color: #f8d202 !important">nekoweb.org</a> ]</p>
+        </footer>
+            
+          <script src="chars-gallery.js"></script>
+            
+        </div>
+            <div class="optionButtons">
+            <button onclick="toggleFont()">Change Font</button>
+            <script type="text/javascript" src="font.js"></script>
+
+    </body>
+</html>

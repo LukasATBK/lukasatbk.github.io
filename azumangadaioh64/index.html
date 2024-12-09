@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <meta content="en-us" http-equiv="Content-Language" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+        <title>Azumanga Daioh 64!</title>
+        <link rel="icon" href="imgs/icon.png" type="image/png">
+        <meta property="og:title" content="Azumanga Daioh 64!">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="imgs/icon.png">
+    </head>
+        <style>
+            #azulogo {
+                margin: 10px;
+                width: 100%;
+                filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, 0.6));
+                -webkit-filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, 0.6));
+                -moz-filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, 0.6));
+                animation: floatanim 2s ease-in-out infinite;
+            }
+
+        @keyframes floatanim {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        .life-icons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
+            justify-items: center;
+            gap: 0px;
+        }
+        .life-icons img {
+           height: 300%;
+            image-rendering: pixelated;
+            transition: transform 0.2s ease-in-out;
+            transform-origin: bottom
+        }
+        .life-icons img:hover {
+            transform: scale(1.2);
+        }
+        .download-button {
+            display: block;
+            width: 75%; 
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white !important;
+            text-align: center;
+            text-decoration: none;
+            transition: transform 0.2s, color 0.2s;
+            margin: 0 auto; 
+            border-radius: 20px 20px 20px 20px;
+            -webkit-border-radius: 20px 20px 20px 20px;
+            -moz-border-radius: 20px 20px 20px 20px;
+        }
+
+        .download-button:hover {
+            transform: scale(1.1);
+            color: gray !important;
+            }
+}
+    </style>
+        <link rel="stylesheet" href="style.css">
+    <body>
+        <div id="container">
+            <div id="headerArea">
+                
+                <nav id="navbar" style="margin-bottom: 10px;">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="characters.html">Characters</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="index.html#credits">Credits</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div>
+            <img src="imgs/azudaioh64_logo1.png" id="azulogo">
+            </div>
+            
+            <div id="flex">
+                <main>
+                    
+                    <h1 align="center" style="font-size: 32; ">Azumanga Daioh 64: <strong>The Mod Pack!</strong></h1>
+                    <div class="life-icons" style="margin-bottom: 40px">
+                    <a href="characters.html#osaka"><img src="imgs/icons/osakav2-icon.png" alt="Osaka"></a>
+                    <a href="characters.html#tomo"><img src="imgs/icons/tomo-icon.png" alt="Tomo"></a>
+                    <a href="characters.html#kagura"><img src="imgs/icons/kagura-icon.png" alt="Kagura"></a>
+                    <a href="characters.html#chiyo"><img src="imgs/icons/chiyo-icon.png" alt="Chiyo"></a>
+                    <a href="characters.html#sakaki"><img src="imgs/icons/sakaki-icon.png" alt="Sakaki"></a>
+                    <a href="characters.html#yomi"><img src="imgs/icons/yomi-icon.png" alt="Yomi"></a>
+                    <a href="characters.html#kaorin"><img src="imgs/icons/kaori-icon.png" alt="Kaori"></a>
+                    <a href="characters.html#chihiro"><img src="imgs/icons/chihiro-icon.png" alt="Chihiro"></a>
+                    </div>
+                        <p align="center">This is a mod for <a href="https://sm64coopdx.com" target="_blank">SM64CoopDX</a> that adds the characters from Azumanga Daioh as playable characters and pets!</p>
+                        <a href="https://mods.sm64coopdx.com/mods/azumanga-daioh-64-pack.205/" class="download-button">Download</a>
+                    <p></p>
+                    <p align="center">(This mods requieres <a href="https://mods.sm64coopdx.com/mods/character-select.149/">Char Select 1.11 or higher</a> to work properly, and <a href="https://mods.sm64coopdx.com/mods/widdlepets.209/">WiddlePets </a> to be able to spawn pets)</p>
+                </main>
+            </div>
+            <div id="flex" style="margin-top: 10px">
+                <main align=center>
+                    <h1 align="center" style="margin-bottom: 10px; margin-top:0">Trailer</h1>
+                    <iframe width="504" height="283" src="https://www.youtube-nocookie.com/embed/zSxfD5TDJG0?si=1md6LXtSnQ4z9l9G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="
+                    border-radius: 20px 20px 20px 20px;"></iframe>
+                </main>
+            </div>
+            <div id="flex" style="margin-top: 10px">
+                <main>
+                    <h1 align="center" style="margin-bottom: 10px; margin-top:0">Screenshots</h1>
+                    
+                    <link rel="stylesheet" href="gallery.css">
+                    <div class="slideshow-container" id="slideshow-container">
+                    </div>
+                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                    <div class="dots-container" id="dots-container">
+                    </div>
+                    
+                    <script type="text/javascript" src="gallery.js"></script>
+                </main>
+            </div>
+            <div id="flex" style="margin-top: 10px;">
+            </div>
+            <div id="flex" style="margin-top: 10px;">
+                <main style="margin-right: 10px">
+                    <h1 align="center">Join the <strong>Discord Server</strong>! <img src="imgs/discord.jpg" height=24px style="
+                border-radius: 10px 10px 10px 10px;"></h1>
+                    <div align="center">
+                        <p>Here you can find people constantly hosting SM64 Rooms, fanarts, etc. and get updates on the mod!</p>
+                        <a href="https://discord.gg/nABcj6V3m6" class="download-button">Join Discord Server</a>
+                    </div>
+                </main>
+                <main>
+                    <h1 align="center"><strong>Github</strong> Repo <img src="imgs/github.png" height=24px style="
+                border-radius: 10px 10px 10px 10px;"></h1>
+                    <div align="center">
+                        <p>Download the raw .blend files for you to edit and make your own outfits!</p>
+                        <a href="https://github.com/LukasATBK/char-select-azumanga-pack" class="download-button">Github Repo</a>
+                    </div>
+                </main>
+            </div>
+            <div id="flex" style="margin-top: 10px;">
+                <!-- <img src="imgs/osakahd.png" height=300> -->
+                <main id="credits">
+                    <h1 align="center" style="margin-bottom: 10px; margin-top:0">Credits</h1>
+                    <div align="center">
+                    <p><a href="https://lukasatbk.neocities.org" style="color: white !important;">Lukas ATBK</a> - Project Leader, 3D Modeller, Programmer, Web Designer and Editor.</p>
+                    <p><a href="https://twitter.com/kasugaxel" style="color: white !important;">KasugAxel</a> - Voice clips ripping and feedback.</p>
+                    <p><a href="https://github.com/Squishy6094" style="color: white !important;">Squishy6094</a> - Optimization, Outfit Selector, Github Manager.</p>
+                    <p><a href="https://twitter.com/Nokiaa__" style="color: white !important;">Nokiaa__</a> and <a href="https://twitter.com/azumadeline" style="color: white !important;">Azumadeline</a> - Osaka's Legacy Model.</p>
+                    <small>^ Osaka's Legacy Model textures made by Azumadeline ^</small>
+                    <p><a href="https://twitter.com/KnuxUltimate" style="color: white !important;">UltimateKnux</a> - Key 2D Character and Background art.</p>
+                    <p><a href="https://twitter.com/LentilRock" style="color: white">LentilRock / Kidcat_</a> - Screenshots</p>
+                    <h2><small>Extra Credits</small></h2>
+                    <p><a href="https://sadgrl.online" style="color: white !important;">Sadgrl.online</a> - Layout builder used</p>
+                    <p><a href="https://sm64coopdx.com/" style="color: white !important;">SM64CoopDX Team</a> - Website font and SM64 Character templates</p>
+                    <p><a href="https://twitter.com/RandomTBush" style="color: white !important;">Random Talking Bush</a> - AzuDaioh Puzzle Bobble Sprites</p>
+                    </div>
+                </main>
+            </div>
+        <footer id="footer" style="margin-top: 10px;">
+        <p>[ Website hosted on <a href="https://nekoweb.org" style="color: #f8d202 !important">nekoweb.org</a> ]</p>
+        </footer>
+        </div>
+                    <div class="optionButtons">
+                    <button onclick="toggleFont()">Change Font</button>
+                    <script type="text/javascript" src="font.js"></script>
+    </body>
+</html>

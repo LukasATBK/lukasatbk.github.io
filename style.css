@@ -1,0 +1,186 @@
+/* The most outer element in the website's tree, it contains <html>, which contains <body> */
+:root {
+    background-color: #2b0c18;
+    background-image: url(bg.png);
+    background-repeat: repeat;
+    background-size: 5%;
+    color: #fff;
+
+    /* You could try out a different colorscheme */
+    /* background-color: #031f2b;
+    --card-background:
+        radial-gradient(60% 3em at bottom center, #00ffff46, transparent),
+        radial-gradient(90% 6em at top right, #004e72, transparent),
+        radial-gradient(80% 5em at bottom left, #007c72, transparent),
+        linear-gradient(130deg, #04756c, #0a3f70 70%); */
+
+    /* Define a max width to use for calculating the font size, */
+    /* since we want the cards to adjust to the display size, */
+    /* without changing their layout much, but we don't want the */
+    /* page to stretch to extreme widths on wide monitors */
+    --max-width: 720px;
+
+    /* You can set multiple font-families in order of priority, also called a font-stack */
+    /* It's very good for when a certain platform might not have a certain font, so you can add a fallback */
+    font-family: Inter, 'Noto Sans', system-ui, sans-serif;
+    line-height: 1.5;
+    /* The calculation of the font size to scale up until the window width hits --max-width */
+    /* var(x) gets you the value of the variable x, which must be declared in this or an outer element */
+    font-size: max(12px, calc(min(100vw, var(--max-width)) * 0.04));
+                                                        /*  ^ This is the proportion between the window width and font size  */
+}
+
+            @font-face {
+                font-family: Nunito;
+                src: url('fonts/Nunito-Regular.ttf');
+            }
+
+            @font-face {
+                font-family: Nunito;
+                src: url('fonts/Nunito-Bold.ttf');
+                font-weight: bold;
+            }
+
+            @font-face {
+                font-family: Nunito;
+                src: url('fonts/Nunito-Italic.ttf');
+                font-style: italic;
+            }
+
+            @font-face {
+                font-family: Nunito;
+                src: url('fonts/Nunito-BoldItalic.ttf');
+                font-style: italic;
+                font-weight: bold;
+            }
+
+body {
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 3em auto;
+}
+section {
+    background-color: #260001;
+    border-radius: .5rem;
+    padding: 0.25rem;
+    margin: 0.5rem;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    filter: drop-shadow(6px 6px 0px rgba(0, 0, 0, 1));
+    -webkit-filter: drop-shadow(6px 6px 0px rgba(0, 0, 0, 1));
+    -moz-filter: drop-shadow(6px 6px 0px rgba(0, 0, 0, 1));
+    
+}
+
+h2 {
+    /* em units are relative to the current text size, so you could change the text size of the entire site by changing it in :root */
+    font-size: 1em;
+    margin: 0;
+    line-height: 1;
+}
+
+p, ul, ol, dl { margin: .1em 0; }
+ul, ol { padding-left: 1em; }
+dl dd { margin: 0; }
+
+dl {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    line-height: 1;
+    row-gap: 1em;
+}
+dl dt {
+    font-weight: bold;
+    font-size: .7rem;
+    color: palevioletred;
+}
+/* Let's change how hyperlinks look */
+a {
+    color: palevioletred;
+    text-decoration: underline;
+    transition: ease 0.2s
+}
+
+a:hover {
+    color: gray;
+}
+
+
+/* Some adjustments to make the table look cleaner */
+table {
+    /* Since we have no borders, we don't wanna think about the space they would occupy, so we remove it */
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Some more specific adjustments */
+#me {
+    /* You must make #me a positioned element, so that you can position your avatar image properly */
+    position: relative;
+    /* Apparantly positioning isn't enough to center the image */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* Add the necessary space for the avatar */
+    padding-top: 2.5em;
+}
+#greeting {
+    position: absolute;
+    height: 4em;
+    inset: -2em auto auto auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 1.2;
+}
+#greeting > img {
+    height: 4em;
+    border-radius: 999px;
+    z-index: 99;
+}
+#greeting > span {
+    font-size: .8em;
+    background-color: #000;
+    border-radius: .5em;
+    padding: .5em;
+    margin: 0 1em;
+}
+.logo {
+    transform-origin: top;
+    margin-bottom: -5px;
+    width: 25px;
+    border-radius: 10px;
+}
+#statuscafe {
+    font-size: 25px;
+    padding: .5em;
+    border-radius: 10px;
+    border: 1px solid palevioletred;
+}
+#statuscafe-username {
+    margin-bottom: .1em;
+}
+#statuscafe-content {
+    margin: 0 0em 0em 0em;
+}
+.button {
+    background-color: palevioletred;
+    color: black;
+    padding: 5px 50px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    border: 2px solid #000000;
+    filter: drop-shadow(6px 6px 0px rgba(0, 0, 0, 1));
+    -webkit-filter: drop-shadow(6px 6px 0px rgba(0, 0, 0, 1));
+    -moz-filter: drop-shadow(6px 6px 0px rgba(0, 0, 0, 1));
+    transition: ease 0.1s
+}
+
+.button:hover {
+    background-color: #333;
+    color: white;
+}
