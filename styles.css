@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Nunito', sans-serif;
   background: #181717;
   background-image: url(img/bg.png);
   height: 100vh;
@@ -14,6 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+    
 }
 
 .menu-grid {
@@ -74,6 +75,7 @@ body {
   border-radius: 20px;
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
   border-bottom: 2px solid #ffffff80;
+    margin-bottom: 1%;
 }
 
 .bottom-bar a {
