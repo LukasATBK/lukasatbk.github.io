@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mod Creator Screen Guide - Tomo T.W Mod Creator Docs</title>
+  <link rel="icon" type="image/png" href="/img/modcreatorIcon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main class="content">
+        
+        <h3><a href="creatinganewmod.html">Previous (Creating or opening mod)</a></h3>
+        
+        <h1>Mod Creator Screen Guide</h1>
+        
+        <img src="img/modcreatorScreen.png" class="cimg">
+        <p>Yeah... it's a lot to grasp on, so I'll try to explain everything very clearly.</p>
+        
+        <div class="box">
+        <img><b>Top Bar</b><br>
+        <img src="img/modscreen_img1.png" class="cimg"><br>
+            <li>Application</li>
+            <ul>Opens the documentation (this) in your default browser.</ul>
+            <ul><li>Documentation</li></ul>
+            <ul><li>Exit to main screen</li></ul>
+            <ul>Go back to the main screen of the mod creator.</ul>
+            <ul><li>Close App</li></ul>
+            <ul>Close the mod creator.</ul>
+            <li>Reload All</li>
+            <ul>Reload all the assets from the mod's folder.</ul>
+            <li>Open Aseprite</li>
+            <ul>Opens your all of your arts assets on it's own Aseprite window.</ul>
+            <ul>More info on the <a href="makingamod.html#aseprite">Aseprite setup</a> section</ul>
+            <li>Open Folder</li>
+            <ul>Opens your mod's folder.</ul>
+        </div><br>
+        
+        <div class="box">
+        <img><b>Animation Section</b><br>
+        <img src="img/modscreen_img2.png" class="cimg"><br>
+            <li>Current Animation</li>
+            <ul>
+            Here, you're able to preview the animations used in-game by clicking any element on the animation list.<br><br></ul>
+            <li>Default Model</li>
+            <ul>
+            The "Default Model" let's you see how the selected animation plays, so you can use it as a reference for your character's sprites.</ul>
+        </div><br>
+        
+        <div class="box">
+        <img><b>Character Section</b><br>
+        Here You can see the main properties you character will have.<br>
+        <img src="img/modscreen_img3.png" class="cimg"><br>
+            <li>Long Name</li>
+            <ul>The name the character will have on menus. (Limited to 20 characters.)</ul>
+            <li>Short Name</li>
+            <ul>The name the other characters will refer your character as during interactions or dialogues. (Limited to 20 characters.)</ul>
+            <li>Live Preview</li>
+            <ul>Live preview of your character's sprites, this will also play the animation selected on the Animation section.</ul>
+            <ul><li>Mirror</li></ul>
+            <ul><ul>If checked, you'll be able to see your character looking at the right.</ul></ul>
+            <ul><li>Icon</li></ul>
+            <ul><ul>This will show your character's life icon (icon.png)<br>It will only update when the "Reload All" on the top bar is clicked.</ul></ul>
+            <li>Character Description</li>
+            <ul>Your character's description. (Limited to 64 characters.)</ul>
+            <li>Author</li>
+            <ul>How you will be credited in-game. (Limited to 20 characters.)</ul>
+            <li>Version</li>
+            <ul>Your mod's version. (Limited to 9 characters.)</ul>
+        </div><br>
+        
+        <div class="box">
+        <img><b>Animation Speeds Section</b><br>
+        Here You can setup the animation speeds of your character's animations.<br>
+        <img src="img/modscreen_img4.png" class="cimg"><br>
+            <li>Idle, Walking and Running Boxes</li>
+            <ul>Here you can input the speed your animations have in the scale of 0% to 100%.<br> 
+            The game runs at locked 60FPS, so, for example, 20% speed would be the 20% of 60FPS (12FPS)<br>You can also preview the current speed of each animation on the animation and character preview sections.</ul>
+            <li>Idle Loop Frame</li>
+            <ul>Here you can input the animation frame your idle animation will loop back to after it ends.<br>The value can go from 0 (first frame) to 7 (last frame);
+            <br><strong>0</strong> = idle animation loops from first frame.
+            <br><strong>7</strong> = idle animation doesn't loop.
+            <br><strong>any in-between</strong> = animation will loop from said frame.</ul>
+            <li>Default speeds button</li>
+            <ul>Sets the speed boxes to the game's default values (20%, 20% and 35%)</ul>
+            <li>Reload speeds button</li>
+            <ul>Reloads the speed values from the mod.ini value (in case you mess them up and want to go back to the last time you saved.)</ul>
+        </div><br>
+        
+        <div class="box">
+        <img><b>Moveset sections</b><br>
+        Here You can setup your character's movements.<br>
+        <img src="img/modscreen_img5.png" class="cimg"><br>
+            <li>Character Moveset select box</li>
+            <ul>Lets you select between all the default characters' movesets;</ul>
+            <ul><strong>Tomo</strong>: Has all the basic movements (Homing attack, rolling)</ul>
+            <ul><strong>Kagura</strong>: Same as Tomo but with a speed buff.<br>
+(You have to activate her instant homing attack manually)</ul>
+            <ul><strong>Osaka</strong>: Slower character but has an higher jump and floatier physics.<br>You also get a shield every time you touch a checkpoint.</ul>
+            <ul><strong>Chiyo</strong>: Slower character but has an higher jump and floatier physics.<br>Holding the jump button in the air will make her fly.</ul>
+            <ul><strong>Sakaki</strong>: Similar to Kagura, she has a speed buff.<br>
+Pressing the homing attack button while no enemy is targeted will perform an air dash.</ul>
+            <ul><strong>Yomi</strong>: She has a heavier jump and also has a bounce move she can use to keep momentum.</ul>
+            <li>Options</li>
+            <ul><li>Instant Homing Attack</li></ul>
+            <ul><ul>Makes you instantly teleport to the current target when you press the homing attack button</ul></ul>
+            <ul><LI>Jump Animation</LI></ul>
+            <ul><ul>Has 2 options for the jumping animation:<br>
+                <strong>Run/Jump: </strong>the running animation will play over the jump animation if you jump while running (default)<br>
+                <strong>Jump Only: </strong>Will always play the jump animation if you jump.</ul></ul>
+            <ul><li>Footsteps</li></ul>
+            <ul><ul>Toggle for the footsteps sounds when running.</ul></ul>
+            <ul><li>Char Override</li></ul>
+            <ul><ul>Lets you choose the character your mod will replace for in-game events.
+                <br> <strong>Options:</strong> None, Tomo, Osaka, Chiyo, Yukari, Nyamo, Sakaki, Yomi, Kagura, Kaori and Chihiro.<br>
+                <br>For Example, if you set the value to "Sakaki" it will make Sakaki not appear in the hubworld, and play the story as if you were playing as vanilla Sakaki, that way you avoid having duplicates.</ul>
+            </ul>
+        </div><br>
+        
+        <div class="box">
+        <img><b>File sections</b><br>
+        Here You can save or test your progress and change the music.<br>
+        <img src="img/modscreen_img6.png" class="cimg"><br>
+            
+            <li>Level Complete Song</li>
+            <ul>Lets you choose between the default music or your custom file.<br>
+            <strong>Default: </strong> Your selected character override's level complete song<br>
+                (Ex: If the Character Override is set to Kagura, then your level complete song will be her song.)<br>
+            <Strong>Custom: </Strong>Will play the song you put in the "Custom Song file" input box.
+            </ul>
+        <li>File types button</li>
+            <ul>Shows you a window with the supported file types for music;
+            <br>.ogg (Recommended) .mp3 and .wav</ul>
+        <li>Save</li>
+            <ul>Will save all your progress.</ul>
+            <li>Save and Test</li>
+            <ul>Saves your progress and starts a test room where you can try out your mod.<br>
+            <img src="img/testroom.png"></ul>
+        </div><br>
+        
+        <h3><a href="makingamod.html">Next (Making a mod)</a></h3>
+        
+    </main>
+    
+</body>
+    <!-- navbar--> 
+    <script src="script.js"></script>
+    <script>
+    document.getElementById("navbar").innerHTML = navbarHTML;
+  </script>
+    <!-- navbar-->
+</html>

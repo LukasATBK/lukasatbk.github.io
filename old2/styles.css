@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: #181717;
+  background-image: url(img/bg.png);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+    
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
+  gap: 20px;
+  width: 70vw;
+  max-width: 900px;
+  padding: 20px;
+  justify-items: center;
+  align-items: center;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.menu-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  border-bottom: 2px solid #ffffff80;
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: contain;
+}
+
+.menu-item:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item.filled {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bottom-bar {
+  width: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px 0;
+  border-radius: 20px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #ffffff80;
+    margin-bottom: 1%;
+}
+
+.bottom-bar a {
+  text-decoration: none;
+  color: palevioletred;
+  font-weight: bold;
+  transition:  0.3s;
+}
+
+.bottom-bar a:hover {
+  color: gray;
+}
+
+.banner {
+  *width: 100%;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #ffffff80;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner-img {
+  flex: 0 0 120px; /* Ajusta el ancho de la imagen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-img img {
+  max-width: 100%;
+  height: auto;
+  padding-right: 12px;
+  border-radius: 20px;
+}
+
+.banner-text {
+  flex: 1; /* Ocupa el espacio restante */
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+

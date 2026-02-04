@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making a Mod - Tomo T.W Mod Creator Docs</title>
+  <link rel="icon" type="image/png" href="/img/modcreatorIcon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main class="content">
+        
+        <h3><a href="modcreatorscreen.html">Previous (Mod Creator Screen Guide)</a></h3>
+        
+        <h1>Making a mod</h1>
+        <div class="box">
+        <h2>Contents</h2>
+            <li><a href="#start">Start</a></li>
+            <li><a href="#files">Your mod's files</a></li>
+            <li><a href="#aseprite">Setting up Aseprite</a></li>
+            <li><a href="#sprites">Editing sprites</a></li>
+            <li><a href="#export">Exporting Sprites</a></li>
+            <li><a href="#saving">Saving and testing</a></li>
+        </div>
+        <br>
+        
+        <div class="box">
+        <h2 id="start">Start</h2>
+        Once you have learned how to create your mod and how the mod creator screen works, it's a good opportunity to start making your own mod.<br><br>
+        You can start by getting the basic stuff done, like the character's information, moveset, etc.<br><br>
+        <img src="img/makingmod1.png" class="cimg"><br>
+        
+        <br>For this guide, I will be using <a href="https://azumadeline.straw.page/" target="_blank">azumadeline's</a> custom <a href="https://www.spriters-resource.com/custom_edited/azumangadaiohcustoms/sheet/235115/" target="_blank">Mario World-styled Osaka</a> sprites;<br><br>
+        <img src="img/osakaV.png"><br>
+        Thanks a lot for her contribution!
+        </div>
+        <br>
+        <div class="box">
+        <h2 id="files">Your mod's files</h2>
+        Your mod's files located in <strong>Tomo The Wildcat\Data\mods\<a style="color: lightgray !important; background: white !important">Your Mod</a></strong>  are the following:<br>
+        <img src="img/modsfiles.png" class="cimg"><br>
+        they are all pretty self explanatory, <strong>mod.ini</strong> is where the mod's info is stored.<br>
+        "<strong>LevelComplete.png</strong>" is the Level Complete sprite for your character.<br>
+        "<strong>icon.png</strong>" is your character's life icon.<br>
+        "<strong>LevelComplete.ogg</strong>" is the song that will be played in the Level Complete screen.<br><br>
+        The "<strong>sprites</strong>" folder is where your character's sprites are stored.<br>    
+        <img src="img/spritessfiles.png" class="cimg"><br>
+        These are lots of files, I know, but the only one you have to care about is "<strong>character.ase</strong>", this is the file you'll open with Aseprite or Libresprite to get your character's sprites in-game.
+        </div>
+        <br>
+        
+        <div class="box">
+        <h2 id="aseprite" style="margin-bottom: 0px;">Setting up Aseprite</h2>
+        <p style="font-size: 13px; margin-top: 0px">(or Libresprite)</p>
+        First you want to set-up for Aseprite<small> or Libresprite</small> folder, click on the "Open Aseprite" button at the top bar.<br>
+        <img src="img/opensprite.png" class="cimg"><br>
+        If it's your first time using the mod creator tool (or if the program can't find your Aseprite/Libresprite folder) you'll get the following pop-up:<br>
+        <img src="img/spritenotfound.png" class="cimg"><br>
+        You just have to click "Accept" and look up for your program's .exe file on your computer.<br>
+        <img src="img/spriteexe.png" class="cimg" style="width: 650px"><br>
+        <br>For this guide, I'll be using Libresprite since it's free.
+        <br>Once you have setup the program, you can click "Open Aseprite" again for it to work.
+        </div>
+        
+        <br>
+        
+        <div class="box">
+        <h2 id="sprites">Editing Sprites</h2>
+        Hey, finally the fun part, huh?
+            <br>Now that we've got the character's info and Aseprite setup part done, we can click the "Open Aseprite" button once again to open our program.<br>
+            <img src="img/modscreen_2.png" class="cimg"><br>
+            Now a Window like this should open:<br>
+            <strong><small>Be aware that this is not a guide on how to use Aseprite, so look up for stuff like that somewhere else, but shouldn't be too hard to learn for an amateur.</small></strong><br>
+            <img src="img/aseprite_ui.png" class="cimg" style="width: 900px">
+            <br>It may or not look different for you, depends on if you have used the program before or if there's any new updates, but all should function the same.<br>
+            Let me guide you quickly on the important stuff;<br>
+            <li>Tabs</li>
+            <ul>By default, you have 3 tabs at the top of the UI:</ul>
+            <ul><img src="img/asetabs.png" class="cimg"><br></ul>
+            <ul>These are pretty self-explanatory; "<strong>character.ase</strong>" is your character's sprites, "<strong>icon.png</strong>" is your character's life icon, and "<strong>LevelComplete.png</strong>" is your character's level complete sprite.<br>
+            Click on each one to see and edit its contents.<br></ul>
+            <li>Animation Timeline</li>
+            <ul><img src="img/timeline.png" class="cimg"><br>
+            This is where our animation frames are stored, you can move around by clicking them or pressing the arrow keys.</ul>
+            <li>Animation Groups</li>
+            <ul>Each animation from the game here is divided by groups, for easier editing.</ul>
+            <ul><img src="img/animgroups.png" class="cimg"></ul>
+            <ul>Some names aren't as clear as others due to limitations on the program's font size.</ul><br>
+            Now you can go and experiment with the sprites.<br>
+        <img src="img/funnyase.png" style="width: 900px">
+            <h3>PSA: Do not add or delete animation frames for ANY animation, as that will mess up with the animation frames' indexes for custom characters internally, keep the whole file at 35 frames.</h3>
+            <br>in my case, I will use sprites from the previously mentioned Mario World styled Osaka sprite-sheet by azumadeline.<br><br>
+            <img src="img/osakaworldfinished.png" style="cimg" style="width: 900px">
+            <br>Remember to save each file with CTRL + S!
+        </div>
+        
+        <br>
+        <div class="box">
+        <h2 id="export">Exporting sprites</h2>
+            Once you have finished editing your character's sprites, it's time to export all animation frames into different numbered .png files.<br>
+            <img src="img/exportase.png" class="cimg" style="width: 900px"><br>
+            So go to <strong>File > Export</strong> on Aseprite and click on it (or press Ctrl+Alt+Shift+S)<br>
+            This window will pop-up, make sure to set <strong>File name</strong> as <strong>character.png</strong>, <strong>File type</strong> to <strong>png files</strong> and <strong>Resize</strong> to <strong>100%</strong>.<br>
+            <img src="img/exportconfig.png" class="cimg">
+            <br>Once you have done all of that, click "Ok"<br><br>
+            After that, you will probably get a few other pop-ups like these:<br>
+            <img src="img/acceptbigshot.png" class="cimg"><br>
+            Just accept them all and everything should be done!<br>
+            Now you can go back to the Mod Creator program and click the "Reload All" button.<br>
+            <img src="img/reload.png" class="cimg"><br>
+            And it's all done now!<br>
+            <img src="img/reloadcomplete.png" class="cimg"><br>
+            You can touch up some stuff like the animation speeds and the idle frame loop.
+        </div>
+        
+        <br>
+        <div class="box">
+        <h2 id="saving">Saving and testing</h2>
+            Once you have made progress, remember to save your mod with the "Save" button<br>
+            <img src="img/save.png" class="cimg"><br>
+            Or, you can press click the "Save and Test" button, which will save your progress and open a new window where you'll be able to test your character in-game.<br>
+            <img src="img/osaka_final1.png" style="width:400px;" class="cimg">
+            <img src="img/osaka_final2.png" style="width:400px;" class="cimg"><br>
+            <img src="img/osaka_final3.png" style="width:400px;" class="cimg">
+            <img src="img/osaka_final4.png" style="width:400px;" class="cimg"><br>
+            <video width="600px" id="osakavideo" controls>
+                <source src="img/osakaGameplay.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <script>
+            window.addEventListener('DOMContentLoaded', function () {
+                var video = document.getElementById('osakavideo');
+                video.volume = 0.25; 
+                });
+            </script>
+
+            
+
+        </div>
+        
+    </main>
+    
+</body>
+    <!-- navbar--> 
+    <script src="script.js"></script>
+    <script>
+    document.getElementById("navbar").innerHTML = navbarHTML;
+  </script>
+    <!-- navbar-->
+</html>
